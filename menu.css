@@ -1,0 +1,266 @@
+:root{
+  --background: #f9e5c1;
+  --prim: #ca9558;
+  --sec: #5a3830;
+  --ter: #9b3c27;
+  --footer: #8a3521;
+  --a: #7a3b2e;
+  --text: #faecd7;
+}
+
+html {
+  height: auto;
+  width: 100%;
+  padding: 10 10 10 10;
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 100%;
+  padding-top: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header{
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: none;
+}
+
+.header a{
+  text-decoration: none;
+  color: var(--a);
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.header a:hover{
+  color: var(--ter);
+  border-bottom: 3px solid var(--ter);
+}
+
+.menu img{
+  padding-top: 23px;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section{
+  padding-top: 1vh;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 2rem;
+  scrollbar-width: none; 
+}
+
+.slider{
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide{
+  width: 500%;
+  display: flex;
+}
+
+.slide input{
+  display: none;
+}
+
+.st{
+  width: 20%;
+  /* transition: 1s;  */
+}
+
+.st img{
+  max-width: 300px;
+  height: auto;
+  border-radius: .5rem;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+} 
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+} 
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+} 
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+} 
+
+#radio5:checked ~ .first{
+  margin-left: -80%;
+} 
+
+#radio6:checked ~ .first{
+  margin-left: -100%;
+}
+
+#radio7:checked ~ .first{
+  margin-left: -120%;
+}
+
+#radio8:checked ~ .first{
+  margin-left: -140%;
+}
+
+#radio9:checked ~ .first{
+  margin-left: -160%;
+}
+
+#radio10:checked ~ .first{
+  margin-left: -180%;
+}
+
+#radio11:checked ~ .first{
+  margin-left: -200%;
+}
+
+#radio12:checked ~ .first{
+  margin-left: -220%;
+}
+
+#radio13:checked ~ .first{
+  margin-left: -240%;
+}
+
+#radio14:checked ~ .first{
+  margin-left: -260%;
+}
+
+#radio15:checked ~ .first{
+  margin-left: -280%;
+}
+
+#radio16:checked ~ .first{
+  margin-left: -300%;
+} 
+
+#radio17:checked ~ .first{
+  margin-left: -320%;
+} 
+
+/* .nav-m, .nav-auto{
+  position: absolute;
+  max-width: 350px;
+  margin-top: -28px;
+  display: flex;
+  justify-content: center;
+} */
+
+/* .nav-m{
+  position: absolute;
+  max-width: 350px;
+  margin-top: -28px;
+  display: flex;
+  justify-content: center;
+} */
+
+.nav-buttons {
+  display: flex;
+  justify-content:space-between;
+  /* width: 5%; */
+  z-index: 10;
+  /* left: 10%; */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-buttons img{
+  width: 20px;
+  margin: 10px;
+}
+
+.nav-buttons img:hover{
+  background-color: var(--a);
+  border-color: var(--a);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* .nav-buttons i{
+  font-size: 24px;
+  color:var(--sec);
+  cursor:pointer;
+  margin:auto;
+  transition: color 0.3s;
+}
+
+.nav-buttons i:hover{
+  color:var(--a);
+} */
+/* .fa-solid {
+  border: none;
+  padding: 10px;
+  width: 12%;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.fa-solid:hover{
+  background-color: #895634;
+} */
+
+
+/* .nav-auto div{
+  border: 2px solid #895634;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  justify-content: center;
+  margin: 0 5px 0 6px;
+} */
+
+.m-btn{
+  border: 2px solid var(--sec);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  justify-content: center;
+  margin: 0 5px 0 6px;
+}
+
+.m-btn:hover, #radio1:checked ~ .a-b1, #radio2:checked ~ .a-b2, #radio3:checked ~ .a-b3, #radio4:checked ~ .a-b4, #radio5:checked ~ .a-b5,#radio6:checked ~ .a-b6, #radio7:checked ~ .a-b7, #radio8:checked ~ .a-b8, #radio9:checked ~ .a-b9, #radio10:checked ~ .a-b10, #radio11:checked ~ .a-b11, #radio12:checked ~ .a-b12, #radio13:checked ~ .a-b13, #radio14:checked ~ .a-b14, #radio15:checked ~ .a-, #radio16:checked ~ .a-b16{
+  background-color: var(--ter);
+}
+
+.mbti-btn{
+  display:block;
+  margin:10px auto 0 auto;
+  padding:10px;
+  font-size:14px;
+  color:white;
+  background-color:var(--sec);
+  border:none;
+  font-family:"Poppins", sans-serif;
+  border-radius:5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mbti-btn:hover{
+  background-color: var(--ter);
+}
